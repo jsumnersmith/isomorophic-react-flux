@@ -1,0 +1,33 @@
+// ===============================================================
+// Styles for Icons and Icon-Text lockups
+// ===============================================================
+.bp-icon-text
+{
+  display: inline-block;
+  line-height: 24px;
+  color: @navy;
+  text-decoration: none;
+  font-weight: 700;
+
+  *
+  {
+    .padding-right(.25);
+    vertical-align: bottom;
+  }
+  &:hover {
+    color: darken(@navy, 5%);
+    &.bp-button { color: white;}
+    &.bp-button--gray { color: @black;}
+  }
+  &.bp-button
+  {
+    .padding-top(.9);
+    .padding-bottom(.9);
+    color: white;
+    *
+    {
+      .padding-right(.5);
+    }
+    &--gray { color: @black;}
+  }
+}

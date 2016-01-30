@@ -1,32 +1,93 @@
 {% extends "index.html" %}
 {% block body %}
   <section>
-    <h2>Text</h2>
-    <div class="rt-styleguide-item rt-section">
-      <h1>Header One</h1>
-      <p class="rt-help-text">Used once for title of view.</p>
-    </div>
-    <div class="rt-styleguide-item rt-section">
-      <h2>Header Two</h2>
-      <p class="rt-help-text">Used for section titles</p>
-    </div>
-    <div class="rt-styleguide-item rt-section">
-      <h3>Header Three</h3>
-      <p class="rt-help-text">Used for form titles</p>
-    </div>
-    <div class="rt-styleguide-item rt-section">
-      <p class="">I'm a paragraph. An unreached detail without sopranos is truly a snowstorm of softwood brows. To be more specific, the lento layer comes from a porcine poet. Guarded feet show us how plywoods can be tuna. Framed in a different way, one cannot separate coats from felon fictions. A billboard of the sunshine is assumed to be a sotted currency. In modern times the first ductile lift is, in its own way, a vase. This is not to discredit the idea that a boxlike toenail without workshops is truly a trowel of licensed values. A belgian sees a balance as a convinced format.</p>
-      <p class="rt-help-text">Used for instructional help text.</p>
-    </div>
-    <div class="rt-styleguide-item rt-section">
-      <p class="rt-help-text">I'm help text.</p>
-      <p class="rt-help-text">Used for instructional help text.</p>
-    </div>
-    <div class="rt-styleguide-item rt-section">
-      <p class="rt-warning-text">I'm warning text.</p>
-      <p class="rt-help-text">Used for warnings and error text.</p>
+    <div class="bp-styleguide-item bp-section">
+      <h2>Colors</h2>
+      <hr class="bp-styleguide-rule">
+      <div class="bp-grid">
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--black">
+          @black
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--navy">
+          @navy
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--blue">
+          @blue
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--blue-light">
+          @blue-light
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--green">
+          @green
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--yellow">
+          @yellow
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--orange">
+          @orange
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--red">
+          @red
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--purple">
+          @purple
+        </div>
+        <div class="bp-col-2 bp-styleguide-color bp-styleguide-color--gray">
+          @gray
+        </div>
+      </div>
     </div>
   </section>
-  <h2>Buttons</h2>
-  <p>Buttons go here.</p>
+  <section>
+    <div class="bp-styleguide-item bp-section">
+      <h2>Text</h2>
+      <hr class="bp-styleguide-rule">
+      <h1>Header One</h1>
+      <p class="bp-help-text">Used once for title of view.</p>
+      <hr class="bp-styleguide-rule">
+      <h2>Header Two</h2>
+      <p class="bp-help-text">Used for section titles</p>
+      <hr class="bp-styleguide-rule">
+      <h3>Header Three</h3>
+      <p class="bp-help-text">Used for form titles</p>
+      <hr class="bp-styleguide-rule">
+      <p class="">I'm a paragraph. An unreached detail without sopranos is truly a snowstorm of softwood brows. To be more specific, the lento layer comes from a porcine poet. Guarded feet show us how plywoods can be tuna. Framed in a different way, one cannot separate coats from felon fictions. A billboard of the sunshine is assumed to be a sotted currency. In modern times the first ductile lift is, in its own way, a vase. This is not to discredit the idea that a boxlike toenail without workshops is truly a trowel of licensed values. A belgian sees a balance as a convinced format.</p>
+      <p class="bp-help-text">Used for all normal text.</p>
+      <hr class="bp-styleguide-rule">
+      <p class="bp-help-text">I'm help text.</p>
+      <p class="bp-help-text">Used for instructional help text.</p>
+      <hr class="bp-styleguide-rule">
+      <p class="bp-warning-text">I'm warning text.</p>
+      <p class="bp-help-text">Used for warnings and error text.</p>
+    </div>
+  </section>
+  <section>
+    <div class="bp-section">
+      <h2>Icons &amp; Text</h2>
+      <hr class="bp-styleguide-rule">
+      <p class="bp-help-text">This project includes Google's Material Design icon library as an icon font. See more here: <a href="https://design.google.com/icons/" target="blank">Material Design Icons.</a></p>
+      <a href="#" class="bp-icon-text"><i class="material-icons">settings</i>Settings</a>
+      <a href="#" class="bp-icon-text"><i class="material-icons">search</i>Search</a>
+      <a href="#" class="bp-icon-text"><i class="material-icons">swap_vert</i>Sort</a>
+    </div>
+  </section>
+  <section>
+    <div class="bp-section">
+      <h2>Buttons</h2>
+      <hr class="bp-styleguide-rule">
+      <a class="bp-button">Button text</a>
+      <a class="bp-button bp-button--red">Button text</a>
+      <a class="bp-button bp-button--orange">Button text</a>
+      <a class="bp-button bp-button--green">Button text</a>
+      <a class="bp-button bp-button--gray">Button text</a>
+      <hr class="bp-styleguide-rule">
+      <a class="bp-button bp-icon-text"><i class="material-icons">swap_vert</i>Sort</a>
+      <a class="bp-button bp-button--red bp-icon-text"><i class="material-icons">clear</i>Cancel</a>
+      <a class="bp-button bp-button--orange bp-icon-text"><i class="material-icons">developer_board</i>Reset Board</a>
+      <a class="bp-button bp-button--green bp-icon-text"><i class="material-icons">power_settings_new</i>Power On</a>
+      <a class="bp-button bp-button--gray bp-icon-text"><i class="material-icons">send</i>Send Message</a>
+    </div>
+  </section>
+
+
 {% endblock %}

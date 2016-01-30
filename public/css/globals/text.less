@@ -1,18 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:700|Karla);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900|Karla:400,700);
 
 body
 {
   font-size: @root-font-size;
   font-family: "Karla", sans-serif;
-  color: @navy;
+  color: @black;
 }
 
 h1,h2,h3,h4,h5
 {
-  font-family: "Work Sans", "Helvetica", sans-serif;
-  font-weight: 700;
   .margin-top(1);
-  margin-bottom: .6em;
+  margin-bottom: .25em;
+  color: @navy;
+  font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  font-weight: 900;
   line-height: 1.2;
 }
 h1 {.font-size(3); }
@@ -25,5 +26,12 @@ p
   .line-height(1.4);
 }
 
-.rt-help-text { font-style: italic; }
-.rt-warning-text { color: @red; }
+a { color: @blue; }
+a:hover {color: @blue-light;}
+
+.bp-help-text
+{
+  color: lighten(@black, 50%);
+  font-style: italic;
+}
+.bp-warning-text { color: @red; }
