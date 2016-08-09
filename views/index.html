@@ -1,5 +1,6 @@
 {% extends 'base.html'%}
 
 {% block body %}
-  <div id="app-mount"></div>
+  <div>{% if markup %} {{markup | safe}} {% endif %}</div>
+
 {% endblock %}
